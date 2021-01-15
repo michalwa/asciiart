@@ -1,0 +1,8 @@
+[package]
+name = "asciiart"
+version = "0.1.0"
+authors = ["Michał Wawrzynowicz <michalwa2003@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+image = "0.23.12"
