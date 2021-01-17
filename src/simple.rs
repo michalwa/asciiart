@@ -21,7 +21,7 @@ pub fn convert(
 ) -> Result<()> {
     use image::Pixel;
 
-    let img = img.resize(size.0, size.1, FilterType::Gaussian).to_rgb8();
+    let img = img.resize_exact(size.0, size.1, FilterType::Gaussian).to_rgb8();
 
     for row in img.rows() {
         let mut line = String::new();
